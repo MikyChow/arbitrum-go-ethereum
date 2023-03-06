@@ -66,7 +66,7 @@ SECP256K1_API void JNICALL Java_org_bitcoin_NativeSecp256k1_secp256k1_1destroy_1
 
 /*
  * Class:     org_bitcoin_NativeSecp256k1
- * Method:    secp256k1_ecdsa_verify
+ * Method:    arb_secp256k1_ecdsa_verify
  * Signature: (Ljava/nio/ByteBuffer;JII)I
  */
 SECP256K1_API jint JNICALL Java_org_bitcoin_NativeSecp256k1_secp256k1_1ecdsa_1verify
@@ -82,7 +82,7 @@ SECP256K1_API jobjectArray JNICALL Java_org_bitcoin_NativeSecp256k1_secp256k1_1e
 
 /*
  * Class:     org_bitcoin_NativeSecp256k1
- * Method:    secp256k1_ec_seckey_verify
+ * Method:    arb_secp256k1_ec_seckey_verify
  * Signature: (Ljava/nio/ByteBuffer;J)I
  */
 SECP256K1_API jint JNICALL Java_org_bitcoin_NativeSecp256k1_secp256k1_1ec_1seckey_1verify

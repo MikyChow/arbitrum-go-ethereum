@@ -87,7 +87,7 @@ secp256k1_context* secp256k1_context_clone(const secp256k1_context* ctx) {
     return ret;
 }
 
-void secp256k1_context_destroy(secp256k1_context* ctx) {
+void arb_secp256k1_context_destroy(secp256k1_context* ctx) {
     if (ctx != NULL) {
         secp256k1_ecmult_context_clear(&ctx->ecmult_ctx);
         secp256k1_ecmult_gen_context_clear(&ctx->ecmult_gen_ctx);
@@ -288,7 +288,7 @@ int secp256k1_ecdsa_signature_normalize(const secp256k1_context* ctx, secp256k1_
     return ret;
 }
 
-int secp256k1_ecdsa_verify(const secp256k1_context* ctx, const secp256k1_ecdsa_signature *sig, const unsigned char *msg32, const secp256k1_pubkey *pubkey) {
+int arb_secp256k1_ecdsa_verify(const secp256k1_context* ctx, const secp256k1_ecdsa_signature *sig, const unsigned char *msg32, const secp256k1_pubkey *pubkey) {
     secp256k1_ge q;
     secp256k1_scalar r, s;
     secp256k1_scalar m;
@@ -386,7 +386,7 @@ int secp256k1_ecdsa_sign(const secp256k1_context* ctx, secp256k1_ecdsa_signature
     return ret;
 }
 
-int secp256k1_ec_seckey_verify(const secp256k1_context* ctx, const unsigned char *seckey) {
+int arb_secp256k1_ec_seckey_verify(const secp256k1_context* ctx, const unsigned char *seckey) {
     secp256k1_scalar sec;
     int ret;
     int overflow;

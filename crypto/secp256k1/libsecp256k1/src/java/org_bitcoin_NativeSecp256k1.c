@@ -61,7 +61,7 @@ SECP256K1_API jint JNICALL Java_org_bitcoin_NativeSecp256k1_secp256k1_1ecdsa_1ve
     ret = secp256k1_ec_pubkey_parse(ctx, &pubkey, pubdata, publen);
 
     if( ret ) {
-      ret = secp256k1_ecdsa_verify(ctx, &sig, data, &pubkey);
+      ret = arb_secp256k1_ecdsa_verify(ctx, &sig, data, &pubkey);
     }
   }
 
@@ -120,7 +120,7 @@ SECP256K1_API jint JNICALL Java_org_bitcoin_NativeSecp256k1_secp256k1_1ec_1secke
 
   (void)classObject;
 
-  return secp256k1_ec_seckey_verify(ctx, secKey);
+  return arb_secp256k1_ec_seckey_verify(ctx, secKey);
 }
 
 SECP256K1_API jobjectArray JNICALL Java_org_bitcoin_NativeSecp256k1_secp256k1_1ec_1pubkey_1create

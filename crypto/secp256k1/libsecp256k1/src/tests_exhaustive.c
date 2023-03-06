@@ -235,7 +235,7 @@ void test_exhaustive_verify(const secp256k1_context *ctx, const secp256k1_ge *gr
                     secp256k1_pubkey_save(&pk, &nonconst_ge);
                     secp256k1_scalar_get_b32(msg32, &msg_s);
                     CHECK(should_verify ==
-                          secp256k1_ecdsa_verify(ctx, &sig, msg32, &pk));
+                          arb_secp256k1_ecdsa_verify(ctx, &sig, msg32, &pk));
                 }
             }
         }
@@ -332,7 +332,7 @@ void test_exhaustive_recovery_sign(const secp256k1_context *ctx, const secp256k1
                 CHECK(recid == expected_recid);
 
                 /* Convert to a standard sig then check */
-                secp256k1_ecdsa_recoverable_signature_convert(ctx, &sig, &rsig);
+                arb_secp256k1_ecdsa_recoverable_signature_convert(ctx, &sig, &rsig);
                 secp256k1_ecdsa_signature_load(ctx, &r, &s, &sig);
                 /* Note that we compute expected_r *after* signing -- this is important
                  * because our nonce-computing function function might change k during
@@ -399,11 +399,11 @@ void test_exhaustive_recovery_verify(const secp256k1_context *ctx, const secp256
 
                     /* Verify by converting to a standard signature and calling verify */
                     secp256k1_ecdsa_recoverable_signature_save(&rsig, &r_s, &s_s, recid);
-                    secp256k1_ecdsa_recoverable_signature_convert(ctx, &sig, &rsig);
+                    arb_secp256k1_ecdsa_recoverable_signature_convert(ctx, &sig, &rsig);
                     memcpy(&nonconst_ge, &group[sk_s], sizeof(nonconst_ge));
                     secp256k1_pubkey_save(&pk, &nonconst_ge);
                     CHECK(should_verify ==
-                          secp256k1_ecdsa_verify(ctx, &sig, msg32, &pk));
+                          arb_secp256k1_ecdsa_verify(ctx, &sig, msg32, &pk));
                 }
             }
         }
@@ -464,7 +464,7 @@ int main(void) {
     test_exhaustive_recovery_verify(ctx, group, EXHAUSTIVE_TEST_ORDER);
 #endif
 
-    secp256k1_context_destroy(ctx);
+    arb_secp256k1_context_destroy(ctx);
     return 0;
 }
 

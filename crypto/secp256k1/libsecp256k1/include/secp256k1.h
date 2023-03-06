@@ -182,7 +182,7 @@ SECP256K1_API secp256k1_context* secp256k1_context_clone(
  *  The context pointer may not be used afterwards.
  *  Args:   ctx: an existing context to destroy (cannot be NULL)
  */
-SECP256K1_API void secp256k1_context_destroy(
+SECP256K1_API void arb_secp256k1_context_destroy(
     secp256k1_context* ctx
 );
 
@@ -372,7 +372,7 @@ SECP256K1_API int secp256k1_ecdsa_signature_serialize_compact(
  *
  * For details, see the comments for that function.
  */
-SECP256K1_API SECP256K1_WARN_UNUSED_RESULT int secp256k1_ecdsa_verify(
+SECP256K1_API SECP256K1_WARN_UNUSED_RESULT int arb_secp256k1_ecdsa_verify(
     const secp256k1_context* ctx,
     const secp256k1_ecdsa_signature *sig,
     const unsigned char *msg32,
@@ -417,7 +417,7 @@ SECP256K1_API SECP256K1_WARN_UNUSED_RESULT int secp256k1_ecdsa_verify(
  *  property is required for an application.
  *
  *  The secp256k1_ecdsa_sign function will by default create signatures in the
- *  lower-S form, and secp256k1_ecdsa_verify will not accept others. In case
+ *  lower-S form, and arb_secp256k1_ecdsa_verify will not accept others. In case
  *  signatures come from a system that cannot enforce this property,
  *  secp256k1_ecdsa_signature_normalize must be called before verification.
  */
@@ -466,7 +466,7 @@ SECP256K1_API int secp256k1_ecdsa_sign(
  *  Args:    ctx: pointer to a context object (cannot be NULL)
  *  In:      seckey: pointer to a 32-byte secret key (cannot be NULL)
  */
-SECP256K1_API SECP256K1_WARN_UNUSED_RESULT int secp256k1_ec_seckey_verify(
+SECP256K1_API SECP256K1_WARN_UNUSED_RESULT int arb_secp256k1_ec_seckey_verify(
     const secp256k1_context* ctx,
     const unsigned char *seckey
 ) SECP256K1_ARG_NONNULL(1) SECP256K1_ARG_NONNULL(2);
