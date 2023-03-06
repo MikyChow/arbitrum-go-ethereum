@@ -23,9 +23,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/MikyChow/arbitrum-go-ethereum/common"
+	"github.com/MikyChow/arbitrum-go-ethereum/core/types"
+	"github.com/MikyChow/arbitrum-go-ethereum/rlp"
 )
 
 type jsonEncoder interface {

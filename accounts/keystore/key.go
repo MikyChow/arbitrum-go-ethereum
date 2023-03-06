@@ -28,9 +28,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/MikyChow/arbitrum-go-ethereum/accounts"
+	"github.com/MikyChow/arbitrum-go-ethereum/common"
+	"github.com/MikyChow/arbitrum-go-ethereum/crypto"
 	"github.com/google/uuid"
 )
 

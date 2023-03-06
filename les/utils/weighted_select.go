@@ -20,7 +20,7 @@ import (
 	"math"
 	"math/rand"
 
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/MikyChow/arbitrum-go-ethereum/log"
 )
 
 type (

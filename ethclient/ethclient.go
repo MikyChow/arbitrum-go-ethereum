@@ -22,13 +22,13 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	ethereum "github.com/MikyChow/arbitrum-go-ethereum"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/MikyChow/arbitrum-go-ethereum/common"
+	"github.com/MikyChow/arbitrum-go-ethereum/common/hexutil"
+	"github.com/MikyChow/arbitrum-go-ethereum/core/types"
+	"github.com/MikyChow/arbitrum-go-ethereum/rpc"
 )
 
 // Client defines typed wrappers for the Ethereum RPC API.

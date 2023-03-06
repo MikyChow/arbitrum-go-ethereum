@@ -24,9 +24,9 @@ import (
 	"net"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/p2p/enode"
+	"github.com/MikyChow/arbitrum-go-ethereum/common/math"
+	"github.com/MikyChow/arbitrum-go-ethereum/crypto"
+	"github.com/MikyChow/arbitrum-go-ethereum/p2p/enode"
 )
 
 // node represents a host on the network.

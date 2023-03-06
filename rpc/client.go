@@ -27,7 +27,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/MikyChow/arbitrum-go-ethereum/log"
 )
 
 var (

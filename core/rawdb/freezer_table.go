@@ -27,9 +27,9 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
+	"github.com/MikyChow/arbitrum-go-ethereum/common"
+	"github.com/MikyChow/arbitrum-go-ethereum/log"
+	"github.com/MikyChow/arbitrum-go-ethereum/metrics"
 	"github.com/golang/snappy"
 )
 

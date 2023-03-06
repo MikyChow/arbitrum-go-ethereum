@@ -18,18 +18,18 @@ package external
 
 import (
 	"fmt"
+	ethereum "github.com/MikyChow/arbitrum-go-ethereum"
 	"math/big"
 	"sync"
 
-	"github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/rpc"
-	"github.com/ethereum/go-ethereum/signer/core/apitypes"
+	"github.com/MikyChow/arbitrum-go-ethereum/accounts"
+	"github.com/MikyChow/arbitrum-go-ethereum/common"
+	"github.com/MikyChow/arbitrum-go-ethereum/common/hexutil"
+	"github.com/MikyChow/arbitrum-go-ethereum/core/types"
+	"github.com/MikyChow/arbitrum-go-ethereum/event"
+	"github.com/MikyChow/arbitrum-go-ethereum/log"
+	"github.com/MikyChow/arbitrum-go-ethereum/rpc"
+	"github.com/MikyChow/arbitrum-go-ethereum/signer/core/apitypes"
 )
 
 type ExternalBackend struct {

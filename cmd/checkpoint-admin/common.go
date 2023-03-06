@@ -19,15 +19,15 @@ package main
 import (
 	"strconv"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/accounts/abi/bind"
-	"github.com/ethereum/go-ethereum/accounts/external"
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/contracts/checkpointoracle"
-	"github.com/ethereum/go-ethereum/ethclient"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/MikyChow/arbitrum-go-ethereum/accounts"
+	"github.com/MikyChow/arbitrum-go-ethereum/accounts/abi/bind"
+	"github.com/MikyChow/arbitrum-go-ethereum/accounts/external"
+	"github.com/MikyChow/arbitrum-go-ethereum/cmd/utils"
+	"github.com/MikyChow/arbitrum-go-ethereum/common"
+	"github.com/MikyChow/arbitrum-go-ethereum/contracts/checkpointoracle"
+	"github.com/MikyChow/arbitrum-go-ethereum/ethclient"
+	"github.com/MikyChow/arbitrum-go-ethereum/params"
+	"github.com/MikyChow/arbitrum-go-ethereum/rpc"
 	"github.com/urfave/cli/v2"
 )
 

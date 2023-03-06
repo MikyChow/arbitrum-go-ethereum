@@ -27,13 +27,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/accounts/abi/bind"
-	"github.com/ethereum/go-ethereum/accounts/abi/bind/backends"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/contracts/checkpointoracle/contract"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/MikyChow/arbitrum-go-ethereum/accounts/abi/bind"
+	"github.com/MikyChow/arbitrum-go-ethereum/accounts/abi/bind/backends"
+	"github.com/MikyChow/arbitrum-go-ethereum/common"
+	"github.com/MikyChow/arbitrum-go-ethereum/contracts/checkpointoracle/contract"
+	"github.com/MikyChow/arbitrum-go-ethereum/core"
+	"github.com/MikyChow/arbitrum-go-ethereum/crypto"
+	"github.com/MikyChow/arbitrum-go-ethereum/params"
 )
 
 var (

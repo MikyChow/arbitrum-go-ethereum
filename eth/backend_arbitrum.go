@@ -1,11 +1,11 @@
 package eth
 
 import (
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/ethdb"
+	"github.com/MikyChow/arbitrum-go-ethereum/core"
+	"github.com/MikyChow/arbitrum-go-ethereum/core/state"
+	"github.com/MikyChow/arbitrum-go-ethereum/core/types"
+	"github.com/MikyChow/arbitrum-go-ethereum/core/vm"
+	"github.com/MikyChow/arbitrum-go-ethereum/ethdb"
 )
 
 func NewArbEthereum(

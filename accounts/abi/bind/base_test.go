@@ -19,19 +19,19 @@ package bind_test
 import (
 	"context"
 	"errors"
+	ethereum "github.com/MikyChow/arbitrum-go-ethereum"
 	"math/big"
 	"reflect"
 	"strings"
 	"testing"
 
-	"github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/accounts/abi"
-	"github.com/ethereum/go-ethereum/accounts/abi/bind"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/MikyChow/arbitrum-go-ethereum/accounts/abi"
+	"github.com/MikyChow/arbitrum-go-ethereum/accounts/abi/bind"
+	"github.com/MikyChow/arbitrum-go-ethereum/common"
+	"github.com/MikyChow/arbitrum-go-ethereum/common/hexutil"
+	"github.com/MikyChow/arbitrum-go-ethereum/core/types"
+	"github.com/MikyChow/arbitrum-go-ethereum/crypto"
+	"github.com/MikyChow/arbitrum-go-ethereum/rlp"
 	"github.com/stretchr/testify/assert"
 )
 

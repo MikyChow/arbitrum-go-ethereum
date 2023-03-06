@@ -23,21 +23,21 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/accounts/abi"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/asm"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/eth/tracers"
-	"github.com/ethereum/go-ethereum/eth/tracers/logger"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/MikyChow/arbitrum-go-ethereum/accounts/abi"
+	"github.com/MikyChow/arbitrum-go-ethereum/common"
+	"github.com/MikyChow/arbitrum-go-ethereum/consensus"
+	"github.com/MikyChow/arbitrum-go-ethereum/core"
+	"github.com/MikyChow/arbitrum-go-ethereum/core/asm"
+	"github.com/MikyChow/arbitrum-go-ethereum/core/rawdb"
+	"github.com/MikyChow/arbitrum-go-ethereum/core/state"
+	"github.com/MikyChow/arbitrum-go-ethereum/core/types"
+	"github.com/MikyChow/arbitrum-go-ethereum/core/vm"
+	"github.com/MikyChow/arbitrum-go-ethereum/eth/tracers"
+	"github.com/MikyChow/arbitrum-go-ethereum/eth/tracers/logger"
+	"github.com/MikyChow/arbitrum-go-ethereum/params"
 
 	// force-load js tracers to trigger registration
-	_ "github.com/ethereum/go-ethereum/eth/tracers/js"
+	_ "github.com/MikyChow/arbitrum-go-ethereum/eth/tracers/js"
 )
 
 func TestDefaults(t *testing.T) {

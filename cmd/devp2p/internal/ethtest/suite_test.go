@@ -21,11 +21,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/eth/ethconfig"
-	"github.com/ethereum/go-ethereum/internal/utesting"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p"
+	"github.com/MikyChow/arbitrum-go-ethereum/eth"
+	"github.com/MikyChow/arbitrum-go-ethereum/eth/ethconfig"
+	"github.com/MikyChow/arbitrum-go-ethereum/internal/utesting"
+	"github.com/MikyChow/arbitrum-go-ethereum/node"
+	"github.com/MikyChow/arbitrum-go-ethereum/p2p"
 )
 
 var (

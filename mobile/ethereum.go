@@ -20,9 +20,9 @@ package geth
 
 import (
 	"errors"
+	ethereum "github.com/MikyChow/arbitrum-go-ethereum"
 
-	"github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/MikyChow/arbitrum-go-ethereum/common"
 )
 
 // Subscription represents an event subscription where events are

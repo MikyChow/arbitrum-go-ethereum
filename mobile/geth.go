@@ -24,17 +24,17 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/eth/ethconfig"
-	"github.com/ethereum/go-ethereum/ethclient"
-	"github.com/ethereum/go-ethereum/ethstats"
-	"github.com/ethereum/go-ethereum/internal/debug"
-	"github.com/ethereum/go-ethereum/les"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/nat"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/MikyChow/arbitrum-go-ethereum/core"
+	"github.com/MikyChow/arbitrum-go-ethereum/eth/downloader"
+	"github.com/MikyChow/arbitrum-go-ethereum/eth/ethconfig"
+	"github.com/MikyChow/arbitrum-go-ethereum/ethclient"
+	"github.com/MikyChow/arbitrum-go-ethereum/ethstats"
+	"github.com/MikyChow/arbitrum-go-ethereum/internal/debug"
+	"github.com/MikyChow/arbitrum-go-ethereum/les"
+	"github.com/MikyChow/arbitrum-go-ethereum/node"
+	"github.com/MikyChow/arbitrum-go-ethereum/p2p"
+	"github.com/MikyChow/arbitrum-go-ethereum/p2p/nat"
+	"github.com/MikyChow/arbitrum-go-ethereum/params"
 )
 
 // NodeConfig represents the collection of configuration values to fine tune the Geth

@@ -25,17 +25,17 @@ import (
 	"os"
 	"reflect"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/accounts/scwallet"
-	"github.com/ethereum/go-ethereum/accounts/usbwallet"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/internal/ethapi"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/rpc"
-	"github.com/ethereum/go-ethereum/signer/core/apitypes"
-	"github.com/ethereum/go-ethereum/signer/storage"
+	"github.com/MikyChow/arbitrum-go-ethereum/accounts"
+	"github.com/MikyChow/arbitrum-go-ethereum/accounts/keystore"
+	"github.com/MikyChow/arbitrum-go-ethereum/accounts/scwallet"
+	"github.com/MikyChow/arbitrum-go-ethereum/accounts/usbwallet"
+	"github.com/MikyChow/arbitrum-go-ethereum/common"
+	"github.com/MikyChow/arbitrum-go-ethereum/common/hexutil"
+	"github.com/MikyChow/arbitrum-go-ethereum/internal/ethapi"
+	"github.com/MikyChow/arbitrum-go-ethereum/log"
+	"github.com/MikyChow/arbitrum-go-ethereum/rpc"
+	"github.com/MikyChow/arbitrum-go-ethereum/signer/core/apitypes"
+	"github.com/MikyChow/arbitrum-go-ethereum/signer/storage"
 )
 
 const (
